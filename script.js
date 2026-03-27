@@ -28,7 +28,7 @@
 // } else {
 //     console.log('enter your value ')
 // }
-//  =  //assigning a variable
+//  =  //assigning a variable     
 //  == //comparision
 //  ===  //comparision
 //  != 
@@ -37,3 +37,43 @@
 //  <
 //  >=
 //  =>
+
+// var percentage = prompt('give me your percentage')
+// if (percentage > 90 ) {
+//     alert('your grade is A+')
+// } else if (percentage > 80) {
+//     alert('your grade is A')
+// }
+// else if (percentage > 70) {
+//     alert('your grade is B')
+// }
+// else if (percentage > 60) {
+//     alert('your grade is C')
+// }
+// else {
+//     alert('you are fail')
+// }
+// && // AND OPERATOR BOTH CONDITIONS ARE TRUE
+// || //OR OPERATOR ONLY ONE CONDITION IS TRUE 
+
+// var age = Number(prompt('how old are you?'))
+// var classess = Number(prompt('in which class you are ?'))
+// var weight = 20
+// if (age === 6 && classess === 3 || weight  === 20){
+//     alert('you are allowed')
+// }
+// else{
+//     alert('you are not allowed')
+// }
+
+
+var sub1 = prompt('your first subject name ?')
+var sub2 = prompt('your second subject name ?')
+var sub3 = prompt('your third subject name ?')
+var totalMarks = 300
+var sub1Marks = Number(prompt('first subject mark'))
+var sub2Marks = Number(prompt('second subject mark'))
+var sub3Marks = Number(prompt('third subject mark'))
+var obtainedMarks = sub1Marks + sub2Marks + sub3Marks
+var percentage = obtainedMarks / totalMarks * 100
+alert('Your obtained marks is ' + obtainedMarks + ' and your percentage is %'+ percentage)
