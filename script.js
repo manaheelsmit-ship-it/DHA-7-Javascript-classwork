@@ -67,13 +67,29 @@
 // }
 
 
-var sub1 = prompt('your first subject name ?')
-var sub2 = prompt('your second subject name ?')
-var sub3 = prompt('your third subject name ?')
-var totalMarks = 300
-var sub1Marks = Number(prompt('first subject mark'))
-var sub2Marks = Number(prompt('second subject mark'))
-var sub3Marks = Number(prompt('third subject mark'))
-var obtainedMarks = sub1Marks + sub2Marks + sub3Marks
-var percentage = obtainedMarks / totalMarks * 100
-alert('Your obtained marks is ' + obtainedMarks + ' and your percentage is %'+ percentage)
+// var sub1 = prompt('your first subject name ?')
+// var sub2 = prompt('your second subject name ?')
+// var sub3 = prompt('your third subject name ?')
+// var totalMarks = 300
+// var sub1Marks = Number(prompt('first subject mark'))
+// var sub2Marks = Number(prompt('second subject mark'))
+// var sub3Marks = Number(prompt('third subject mark'))
+// var obtainedMarks = sub1Marks + sub2Marks + sub3Marks
+// var percentage = obtainedMarks / totalMarks * 100
+// alert('Your obtained marks is ' + obtainedMarks + ' and your percentage is %'+ percentage)
+
+//arrays
+var countries = ['pakistan', 'india', 'iran','japan', 'china', 'turkey']
+countries[1] = 'america'
+
+countries.pop() //remove last value of an array
+countries.push('korea', 'singapore') //add element in the end of an array
+countries.shift()  //remove first value of an array
+countries.unshift('afghanistan') //add element in the start of an array
+countries.splice(2,0,'russia')
+var newArray = countries.slice(2,4)
+console.log(newArray)
+
+
+
+
