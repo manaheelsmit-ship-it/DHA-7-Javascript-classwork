@@ -79,17 +79,43 @@
 // alert('Your obtained marks is ' + obtainedMarks + ' and your percentage is %'+ percentage)
 
 //arrays
-var countries = ['pakistan', 'india', 'iran','japan', 'china', 'turkey']
+var countries = ['pakistan', 'india', 'iran', 'japan', 'china', 'turkey']
 countries[1] = 'america'
 
 countries.pop() //remove last value of an array
 countries.push('korea', 'singapore') //add element in the end of an array
 countries.shift()  //remove first value of an array
 countries.unshift('afghanistan') //add element in the start of an array
-countries.splice(2,0,'russia')
-var newArray = countries.slice(2,4)
+countries.splice(2, 0, 'russia')
+var newArray = countries.slice(2, 4)
 console.log(newArray)
 
 
 
+//for loop
+var countries = ['pakistan', 'india', 'iran', 'japan', 'china', 'turkey']
+for (var i = 0; i <= countries.length; i++) {
+    if (countries[i] == 'iran') {
+        console.log('found it ')
+        break;
+    }
+    else {
+        console.log('not found ')
+    }
+}
 
+// for(var i = 1; i <= 10 ; i++){
+//     console.log('2 * ' + i + ' = '+ i*2)
+// }
+
+var countries = ['pakistan', 'india', 'iran']
+var city = ['karachi', 'hyderabad' , 'larkana']
+for (var i = 0 ; i < countries.length; i++){
+    for(var j = 0 ; j < city.length ; j++){
+        console.log(countries[i], city[j])
+    }
+}
+
+
+var userName = prompt('what is your name?')
+console.log(userName.toLowerCase())
